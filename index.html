@@ -10,13 +10,24 @@
 
   <body>
 
-    <h1>Teretuloa sivuilleni!</h1>
+    <h1>BADASS SIVUSTO JEEEEE!</h1>
 
     <p>Tässä kuva minusta :Dddd.</p>
     
    <img src="https://pbs.twimg.com/media/FqtBX1KakAA3c6j.png">
 
    <p>jos tää kuva ei toimi tapan itteni</p>
+
+        <button onclick="lisaaAlaxtus()">ALAX?</button>
+    <p id="alaxtukset">Alaxtaukset: 0</p>
+
+    <script>
+        let count = 0;
+        function lisaaAlaxtus() {
+            count++;
+            document.getElementById("alaxtukset").innerText = "Alaxtaukset: " + count;
+        }
+    </script>
     
   </body>
 
