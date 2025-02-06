@@ -1,39 +1,36 @@
-<html>
-
-  <head>
-
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
     <title>Omat sivut</title>
-
-    
-
-  </head>
-
-  <body>
+    <style>
+        #yllatysKuva {
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
 
     <h1>BADASS SIVUSTO JEEEEEHUUUU!</h1>
 
     <p>Tässä kuva minusta :Dddd.</p>
     
-   <img src="https://pbs.twimg.com/media/FqtBX1KakAA3c6j.png">
+    <img src="https://pbs.twimg.com/media/FqtBX1KakAA3c6j.png">
 
-   <p>olenko komea? paina alaxtaus nappia jos haluata alaxtaa kanssani;))</p>
+    <p>Olenko komea? Paina alaxtaus-nappia jos haluat alaxtaa kanssani ;))</p>
 
-        <button onclick="lisaaAlaxtus()">ALAX?</button>
+    <button onclick="lisaaAlaxtus()">ALAX?</button>
     <p id="alaxtukset">Alaxtaukset: 0</p>
 
-              <h2>Yllätys kuva :Ddd</h2>
+    <h2>Yllätys kuva :Ddd</h2>
     <input type="range" min="0" max="100" value="0" id="slider" oninput="updateOpacity()">
     <br>
     <img id="yllatysKuva" src="https://i.pinimg.com/736x/e8/4d/df/e84ddf088c519582531ebf0727c8207b.jpg">
 
     <script>
         let count = 0;
-        function lisaaAlaxtus() {
-            count++;
-            document.getElementById("alaxtukset").innerText = "Alaxtaukset: " + count;
-        }
-
-        let count = 0;
+        
         function lisaaAlaxtus() {
             count++;
             document.getElementById("alaxtukset").innerText = "Alaxtaukset: " + count;
@@ -45,8 +42,5 @@
         }
     </script>
     
-  </body>
-
+</body>
 </html>
-
- 
