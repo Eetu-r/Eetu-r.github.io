@@ -27,6 +27,23 @@
             count++;
             document.getElementById("alaxtukset").innerText = "Alaxtaukset: " + count;
         }
+
+          <h2>Yllätys kuva :Ddd</h2>
+    <input type="range" min="0" max="100" value="0" id="slider" oninput="updateOpacity()">
+    <br>
+    <img id="yllatysKuva" src="https://i.pinimg.com/736x/e8/4d/df/e84ddf088c519582531ebf0727c8207b.jpg">
+
+    <script>
+        let count = 0;
+        function lisaaAlaxtus() {
+            count++;
+            document.getElementById("alaxtukset").innerText = "Alaxtaukset: " + count;
+        }
+
+        function updateOpacity() {
+            let sliderValue = document.getElementById("slider").value;
+            document.getElementById("yllatysKuva").style.opacity = sliderValue / 100;
+        }
     </script>
     
   </body>
